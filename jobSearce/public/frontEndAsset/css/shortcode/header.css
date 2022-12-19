@@ -1,0 +1,283 @@
+/* -----------------------------------
+Template:  Jobhere
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+/*header top*/
+.header-top {
+  align-items: center;
+  background: #26ae61 none repeat scroll 0 0;
+  display: flex;
+  height: 60px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.sticky .header-top {
+  height: 0;
+}
+.header-top-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.top-contact-list li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+.top-contact-list li+li::before {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 10px;
+  left: -22px;
+  position: absolute;
+  top: 2px;
+  width: 2px;
+  z-index: 2;
+}
+.top-contact-list li a {
+  color: #fff;
+  font-family: montserratlight;
+  font-size: 14px;
+}
+/*social link area*/
+.social-links a {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  height: 31px;
+  margin: 8px 5px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 31px;
+}
+.social-links a:last-child {margin-right: 0;}
+.social-links a i {font-size: 14px; line-height: 31px;}
+.social-links a:hover{background: #ffffff; color: #26ae61}
+/*menu style */
+.header-area{z-index: 10; position: relative;}
+nav#primary-menu {display: inline-block; float: left;}
+.main-menu > li > a {
+  color: #383838;
+  display: block;
+  font-family: "montserratregular";
+  font-size: 14px;
+  line-height: 24px;
+  padding: 38px 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.main-menu > li:hover > a{
+    color:#26ae61;
+}
+.main-menu >li> a::after {
+  background: #26ae61 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height:0px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 5px;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+.main-menu >li:hover> a::after{
+    height: 15px;
+} 
+.login-btn a {
+  background: #ddd none repeat scroll 0 0;
+  color: #333;
+  font-size: 12px;
+  height: 36px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+.login-btn {
+  display: inline-block;
+  padding-left: 17px;
+  padding-top: 31px;
+  transition: all 0.3s ease 0s;
+}
+.login-btn a.button:last-child:after{ width: 100% }
+.login-btn a.button:last-child{color: #fff;}
+.main-menu li {display: inline-block; position: relative;}
+.fixed.sticky .main-menu.text-white > li > a {color: #2d3e50;}
+/*Dropdown Style*/
+.dropdown, .mega-menu-area, ul.dropdown > li > ul.inside-menu {
+    background: #ffffff none repeat scroll 0 0;
+    border-top: 2px solid transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    left: 0;
+    padding: 16px 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 0 0 0;
+            transform-origin: 0 0 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 195px;
+    z-index: 999;
+}
+.dropdown li, .single-mega-item li{display: block;}
+.dropdown li a, .single-mega-item li a {
+	color: #2D3E50;
+	display: block;
+	padding: 11px 22px;
+}
+.main-menu li:hover .dropdown, .main-menu li:hover .mega-menu-area, ul.dropdown > li > ul.inside-menu{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	visibility: visible;
+}
+.main-menu li > ul.dropdown i {
+	float: right;
+	font-size: 17px;
+	position: relative;
+	top: -1px;
+}
+ul.dropdown > li > ul.inside-menu {
+    left: 195px;
+    top: -2px;
+    width: 195px;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0 0 0;
+            transform-origin: 0 0 0;
+    -webkit-transition: all 0.6s ease 0s;
+            transition: all 0.6s ease 0s;
+}
+ul.dropdown > li:hover > ul.inside-menu {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    z-index: 9999;
+}
+.dropdown li a:hover, .single-mega-item li a:hover { padding-left: 27px}
+.mega-menu-area {
+	left: 0;
+	padding: 26px 21px 20px;
+	width: 100%;
+}
+.main-menu li.mega-parent {position: static;}
+.single-mega-item li.block {
+	color: #2d3e50;
+	font-family: montserratregular;
+	font-size: 14px;
+	margin: 0 22px;
+	padding-bottom: 12px;
+	position: relative;
+	text-transform: uppercase;
+}
+.single-mega-item li.block:after {
+    background: #909090 none repeat scroll 0 0;
+    bottom: 8px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 25px;
+}
+.single-mega-item {
+    float: left;
+    width: 25%;
+    padding: 0;
+}
+.fixed {
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 99999;
+}
+ /*Sticky Menu*/
+.sticky {
+	background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+	box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+	left: 0;
+	margin: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.sticky .main-menu > li > a {padding: 20px 15px;}
+.logo {
+	overflow: hidden;
+	padding: 33px 0;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.logo > a {display: inline-block;}
+.logo img{
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.sticky .logo img {
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 160px;
+}
+.sticky .logo {padding: 17px 0;}
+.sticky .login-btn {
+  padding-top: 14px;
+}
+
+.as-mainwrapper.wrapper-boxed .sticky {width: 1200px;}
+.logo.padding {padding: 38px 0 12px;}
+.pull-right.text-center {float: none !important; text-align: center;}
+.text-center nav#primary-menu {float: none;}
+/*----------------------------------------*/
+/*  2.3 Mobile Menu
+/*----------------------------------------*/
+.mobile-menu-area { display: none}
+.mean-container .mean-bar:after {display: none}
+.mean-container .mean-nav ul li a:hover {background: #fff;}
+.mean-container a.meanmenu-reveal span {background: #fff}
+.mean-container .mean-nav ul li a {
+  background: #ffffff none repeat scroll 0 0;
+  color: #2d3e50;
+  display: block;
+  font-size: 14px;
+}
+.mean-container .mean-nav ul li a.mean-expand {background: none; top: -4px;}
+.mean-container .mean-nav ul li a.mean-expand:hover {background: none}
+.mean-container .mean-nav ul li li a {
+  border-top: 0 none;
+  color: #4e4f54;
+  font-size: 14px;
+  opacity: 1;
+}
+.mean-container .mean-nav ul li li{background: #fff}
+.mean-container a.meanmenu-reveal {color: #fff}
+.meanmenu-reveal.meanclose:hover {color: #fff}
+.mean-last {margin-bottom: 20px}
+.mobile-menu {position: relative}
+.mean-container .mean-bar:before {
+    color: #ffffff;
+    content: "MENU";
+    font-size: 18px;
+    font-weight: 600;
+    left: 0;
+    position: absolute;
+    top: 15px;
+}
+.mobile-menu-area {
+  background: #262626 none repeat scroll 0 0;
+  overflow: hidden;
+}
+.mean-container .mean-nav > ul {
+  height: 278px;
+  overflow-y: scroll;
+}
+.mean-container .mean-nav ul li a:hover,.mean-container .mean-nav ul li:hover > a{
+  color: #26ae61;
+}

@@ -1,0 +1,48 @@
+
+html.semi-dark .sidebar-wrapper,
+html.semi-dark .sidebar-wrapper .iconmenu,
+html.semi-dark .sidebar-wrapper .iconmenu .nav-toggle-box,
+html.semi-dark .sidebar-wrapper .textmenu,
+html.semi-dark .sidebar-wrapper .textmenu .brand-logo {
+
+    background-color: #1a2232;
+
+}
+
+html.semi-dark .sidebar-wrapper, 
+html.semi-dark .sidebar-wrapper .iconmenu {
+
+    border-right: 1px solid rgb(255 255 255 / 12%);
+
+}
+
+html.semi-dark .sidebar-wrapper .iconmenu .nav-toggle-box,
+html.semi-dark .sidebar-wrapper .textmenu .brand-logo,
+html.semi-dark .sidebar-wrapper .textmenu .list-group .list-group-item {
+
+    border-bottom: 1px solid rgb(255 255 255 / 12%);
+    color: #fcfcfc;
+
+}
+
+
+html.semi-dark .sidebar-wrapper .textmenu .list-group .list-group-item:hover {
+    background-color: #202a40;
+    transition: all 0.2s;
+}
+
+
+html.semi-dark .sidebar-wrapper .iconmenu .nav-pills .nav-link,
+html.semi-dark .sidebar-wrapper .iconmenu .nav-toggle-box .nav-toggle-icon {
+    color: #fcfcfc;
+    background-color: #202a40;
+}
+
+html.semi-dark .sidebar-wrapper .iconmenu .nav-pills .nav-link.active, html.semi-dark .iconmenu .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+html.semi-dark .brand-logo img {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}

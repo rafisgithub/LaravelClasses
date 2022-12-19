@@ -1,0 +1,14 @@
+{
+  "name": "class-32/class-32",
+  "type": "project",
+  "description": "A simple project",
+  "keywords": [],
+  "license":"",
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app//"
+    }
+  }
+}

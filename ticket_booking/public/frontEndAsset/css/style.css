@@ -1,0 +1,91 @@
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 6em solid #ff4055;
+    border-right: 18em solid transparent;
+    border-left: 18em solid transparent;
+    opacity: 0.60;
+    z-index: -1;
+}
+
+.triangle2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 6em solid #ff4055;
+    border-right: 18em solid transparent;
+    border-left: 18em solid transparent;
+    opacity: 0.60;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    font-family: Quantico;
+}
+
+body {
+    text-align: center;
+    font-family: Open Sans;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#dollarsign {
+    font-size: 60px;
+}
+
+#centerbox {
+    padding: 40px;
+}
+
+.symInput {
+    text-transform: uppercase;
+    padding: 11px;
+    border: solid 1px;
+    vertical-align: top;
+}::-webkit-input-placeholder { /* WebKit browsers */
+     text-transform: none;
+ }
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: none;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: none;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: none;
+}
+
+.fa-arrow-right {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #ff4055;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+#quote {
+    font-size:25px;
+    margin: 50px 0px -20px 0px;
+}
+
+footer {
+    display: block;
+    font-family: monospace;
+    font-size: 12px;
+    padding-top: 110px;
+}

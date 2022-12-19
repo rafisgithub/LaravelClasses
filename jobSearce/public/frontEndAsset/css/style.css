@@ -1,0 +1,1146 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: JobHere - Job Board Responsive HTML Template
+    Author: Hastech IT
+    Author URL: https://themeforest.net/user/hastech
+    Support: https://hasthemes.com/contact-us/
+    Description: Job Board Responsive HTML Template
+    Version: 1.0.2
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+  
+    1. Job Category Style
+    2. Job Post Style
+    3. Fun Factor Area
+    4. Working Area
+    5. Testimonial Area
+    6. Blog Area
+    7. Home Two Style
+    8. About Page
+    9. Single Job Post Page
+    10. Candidates Page
+    11. Blog Page
+    12. Register/Login  Page
+    13. Contact Page
+    14. Other Page CSS
+
+
+-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------*/
+/*  1. Job Category Style
+/*----------------------------------------*/
+.owl-stage-outer .img-icon > img {
+  width: auto;
+}
+.category-item {
+  align-items: center;
+  box-shadow: 0 0 5px 1px #ddd;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin:5px;
+  min-height: 200px;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+.img-icon{
+    display: inline-block;
+}
+.category-item > h5,.cat-text > h5 {
+  color: #696969;
+  font-family: montserratsemi_bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.category-item > h6,.cat-text > h6 {
+  font-family: montserratregular;
+  transition: all 0.3s ease-in-out;
+}
+.category-item:hover {;
+  background: #26ae61 none repeat scroll 0 0;
+  box-shadow: 0 0 5px 1px #ddd;
+}
+.category-item:hover > h5, .category-item:hover > h6{
+    color: #fff;
+}
+
+/*----------------------------------------*/
+/*  2. Job Post Style
+/*----------------------------------------*/
+.post-tab {
+  align-items: center;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  margin: auto auto 60px;
+  overflow: hidden;
+}
+.post-tab a {
+  border: 1px solid #ddd;
+  color: #696969;
+  font-family: montserratregular;
+  font-size: 14px;
+  padding: 18px 22px;
+  transition: all 0.3s ease-in-out;
+  border-left: none;
+}
+.post-tab a.active,.post-tab a:hover{
+    background:#26ae61;
+    color: #fff;
+    border-color: #26ae61;
+}
+.post-tab a:last-child{
+
+    border-radius: 0 14px 14px 0;
+}
+.post-tab a:first-child{
+    border-left: 1px solid #ddd;
+    border-radius: 14px 0px 0px 14px;
+}
+.single-job-post {
+  box-shadow: 0 0 6px 1px #ddd;
+  display: flex;
+  margin-bottom: 30px;
+  padding: 20px;
+  position: relative;
+}
+.address {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+.address > h6 {
+  font-family: montserratregular;
+  margin-bottom: 15px;
+}
+.address > p{
+    margin-bottom: 5px;
+}
+.img-icon {
+  align-items: center;
+  display: flex;
+}
+.button-box {
+  display: flex;
+  align-items: flex-end;
+  width: 213px;
+}
+.job-title {position: relative;}
+.job-title:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 4px;
+}
+.single-job-post:hover .job-title {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.single-job-post:hover .job-title:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.job-title a {display: block;}
+.job-title a img {border: 1px solid #E5E5E5}
+.job-title h4 {font-family: "montserratregular";}
+.job-title h5 {color: #646464; font-family: "montserratsemi_bold";}
+.address span {color: #6d6d6d; line-height: 24px;}
+.time-payment span {
+    color: #6d6d6d;
+    font-family: "montserratsemi_bold";
+    font-size: 18px;
+    line-height: 24px
+}
+.stime-payment a.button {
+  padding: 0;
+  text-align: center;
+  width: 121px;
+  font-size: 14px
+}
+.single-job-post:last-child {border-bottom: 1px solid #e3e3e3;}
+a.button.large-button {line-height: 33px; padding: 0 30px}
+/*----------------------------------------*/
+/*  3. Fun Factor Area
+/*----------------------------------------*/
+.fun-factor-area {
+  background-position: center center;
+  background-size: cover;
+  padding: 125px 0;
+}
+.single-fun-factor h3 {
+  color: #fff;
+  font-family: montserratregular;
+  font-size: 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+.single-fun-factor > h1 {
+  color: #fff;
+  font-family: montserratregular;
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+/*----------------------------------------*/
+/*  4. Working Area
+/*----------------------------------------*/
+.work-item {
+  margin-bottom: 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+.work-item .img-icon {
+  border-radius: 100%;
+  box-shadow: 0 0 8px 0 #ddd;
+  height: 115px;
+  justify-content: center;
+  margin: auto;
+  width: 115px;
+  background:#fff;
+}
+.work-item > h5 {
+  color: #555555;
+  font-family: montserratsemi_bold;
+  margin-bottom: 30px;
+  margin-top: 38px;
+}
+.work-shap {
+  background: rgba(0, 0, 0, 0) url("images/icons/work-shap.png") no-repeat scroll center 13px;
+}
+/*----------------------------------------*/
+/*  5. Testimonial Area
+/*----------------------------------------*/
+.testimonial-carousel .testimonial-img > img {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    height: 143px;
+    margin: auto;
+    width: 143px;
+}
+.testimonial-name {
+  font-size: 16px;
+}
+.testimonial-text {position: relative;}
+.testimonial-text::after {
+  color: #fff;
+  content: "\f1b2";
+  font-family: material-design-iconic-font;
+  font-size: 50px;
+  height: 31px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  z-index: 9;
+}
+.testimonial-text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+}
+/*----------------------------------------*/
+/*  6. Blog Area
+/*----------------------------------------*/
+.blog-text > h4 {
+  color: #262626;
+  font-family: montserratregular;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.blog-image {
+  margin-bottom: 35px;
+}
+.blog-text > h4:hover a{
+    color: #26ae61;
+}
+
+.box-hover a {display: block; position: relative;}
+.box-hover > a:after {
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+.hover-effect:hover .box-hover > a:after {
+    bottom: 20px;
+    left: 20px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 20px;
+    top: 20px;
+}
+.hover-effect:hover .box-hover.hover-large > a:after {bottom: 88px; top: 88px;}
+.blog-image img {width: 100%;}
+.blog-date {
+  display: inline-block;
+  font-family: "montserratregular";
+  height: 66px;
+  line-height: 24px;
+  text-align: center;
+  width: 77px;
+}
+.blog-post-info > span {
+  color: #7a7a7a;
+  display: inline-block;
+  font-family: montserratregular;
+  font-size: 12px;
+  margin-right: 26px;
+  position: relative;
+  text-transform: uppercase;
+}
+.blog-post-info > span + span::before {
+  background: #c3c3c3 none repeat scroll 0 0;
+  bottom: 5px;
+  color: #7a7a7a;
+  content: "";
+  font-size: 30px;
+  height: 2px;
+  left: -18px;
+  position: absolute;
+  width: 5px;
+  z-index: 2;
+}
+.blog-post-info {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.blog-text > p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/*----------------------------------------*/
+/*  7. Home Two Style
+/*----------------------------------------*/
+.search-catestyle2 .job-search-content.text-center {
+  background: #34495e none repeat scroll 0 0;
+  border-radius: 100px;
+  padding: 60px 130px;
+}
+.search-catestyle2 {
+  margin-top: -90px;
+  position: relative;
+  z-index: 99;
+}
+.category-item {
+  align-items: center;
+ 
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  
+  min-height: 200px;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+.category-item2 {
+  box-shadow: 0 0 5px 1px #ddd;
+  display: flex;
+  margin: 5px 5px 30px;
+  padding: 20px 30px;
+  transition: all 0.3s ease-in-out 0s;
+  border-right: 3px solid transparent;
+  cursor: pointer;
+}
+.cat-text {
+  padding-left: 25px;
+}
+.cat-text > h5{
+    margin-top: 0;
+}
+.category-item2:hover{
+    border-right:3px solid #26ae61;
+}
+.all-job-post2 .single-job-post {
+  align-items: center;
+  background: #fff none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+.all-job-post2 .img-icon {
+  align-items: center;
+  background: #f2f2f2 none repeat scroll 0 0;
+  display: flex;
+  padding: 15px 20px;
+}
+.all-job-post2 .single-job-post:hover{
+  box-shadow: 0 0 6px 1px #ddd;  
+}
+.all-job-post2 .address {
+  flex-grow: 70;
+  padding: 0 0 0 30px;
+  width: 260px;
+}
+.all-job-post2 .button-box {
+  display: block;
+  width: auto;
+}
+.all-job-post2 .address > h6 {
+  margin-bottom: 7px;
+}
+.all-job-post2 .address > p {
+  color: #26ae61;
+  margin-bottom: 0;
+}
+.loaction {
+  flex-grow: 50;
+}
+.loaction > p{
+    margin-bottom: 0;
+    line-height: 24px;
+}
+.loaction > p i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.job-post-area2 .section-title {
+  margin-bottom: 28px;
+}
+.post-tab2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+.post-tab2 a {
+  color: #696969;
+  margin: 0 4px;
+  position: relative;
+}
+.post-tab2 a::before {
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  content: "";
+  height: 18px;
+  left: -7px;
+  position: absolute;
+  top: 5px;
+  width: 18px;
+}
+.post-tab2 a.active:before{
+    background: #26ae61;
+    border-color: #26ae61;
+}
+.work-shop2{
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.work-item .img-icon {
+  position: relative;
+}
+.img-icon > span {
+  background: #26ae61 none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+
+/*----------------------------------------*/
+/*  8. About Page
+/*----------------------------------------*/
+
+.breadcrumb-text {z-index: 9; position: relative;}
+.breadcrumb-bar .breadcrumb {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.breadcrumb-text h2 {
+  font-family: montserratsemi_bold;
+  line-height: 25px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.breadcrumb-bar li {
+  color: #333;
+  font-family: "montserratregular";
+  font-size: 15px;
+  margin: 0 10px;
+  position: relative;
+}
+.breadcrumb-bar .breadcrumb > li:not(:last-child)::before {
+  border-radius: 50%;
+  color: #333;
+  content: "/";
+  display: inline-block;
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 14px;
+  position: absolute;
+  right: -11px;
+  top: -1px;
+}
+.breadcrumb-bar .breadcrumb > li + li:before {display: none;}
+.breadcrumb-bar a {
+  color: #333;
+}
+.breadcrumb-bar a:hover{
+    color: #26ae61;
+}
+.abt-img {
+  padding-right: 30px;
+}
+.abt-content > h4 {
+  align-self: flex-start;
+  border-bottom: 1px solid #ddd;
+  font-family: montserratsemi_bold;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+.abt-content > h4 span {
+  border-bottom: 1px solid #26ae61;
+  color: #26ae61;
+  padding-bottom: 3px;
+    font-family: montserratbold;
+}
+.abt-content p strong {
+  font-weight: 600;
+}
+.abt-content > p:last-child{
+    margin-bottom: 0;
+}
+.single-team {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.team-img img{
+    width: 100%;
+}
+
+.team-content {
+  background: #26ae61 none repeat scroll 0 0;
+  bottom: -86px;
+  padding: 20px 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+}
+.single-team:hover .team-content{
+    bottom: 0;
+}
+.team-content > h5 {
+  color: #fff;
+  font-family: montserratsemi_bold;
+}
+.team-content h6 {
+  color: #fff;
+  font-family: poppins;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.abt-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+/*----------------------------------------*/
+/*  9. Single Job Post Page
+/*----------------------------------------*/
+.job-search-content.brd-style {
+  margin: 80px auto auto;
+  max-width: 900px;
+}
+.loadmorebtn {
+  margin-top: 20px;
+  text-align: center;
+}
+.loadmorebtn .button {
+  background: #26ae61 none repeat scroll 0 0;
+  border-radius: 0;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 145px;
+}
+.loadmorebtn .button::after{
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+}
+.area-title .single-job-post {
+  box-shadow: 0 0 6px 1px #ddd;
+  display: flex;
+  margin-bottom: 60px;
+  padding: 20px;
+  position: relative;
+}
+.title {
+  border-bottom: 2px solid #ddd;
+  color: #434343;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  text-transform: capitalize;
+}
+.title > span {
+  border-bottom: 2px solid #26ae61;
+  padding-bottom: 10px;
+}
+.single-job-form {
+  margin-bottom: 57px;
+}
+.mark-icon, .number {line-height: 28px; position: relative;}
+.mark-icon:after {
+  content: "";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 18px;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  color: #26ae61;
+}
+.number > span {
+  display: inline-block;
+  font-family: "montserratregular";
+  width: 20px;
+}
+.single-info label {
+  color: #525252;
+  font-family: "montserratsemi_bold";
+  font-size: 14px;
+  width: 160px;
+  line-height: 34px;
+}
+.single-info input{
+  font-size: 12px;
+  color: #a2a2a2;
+  font-family: 'montserratlight';
+  height: 36px;
+  border: 1px solid #DEDEDE;
+  background: #fff
+}
+.single-info input.dark-border {border-color: #a2a2a2;}
+.area-title > h2, .border-title {
+    border: 1px solid #525252;
+    color: #525252;
+    font-family: "montserratregular";
+    font-size: 24px;
+}
+.border-title {font-size: 16px; border: 1px solid #A2A2A2}
+.background-title {
+    font-size: 16px;
+    color: #fff;
+    font-family: "montserratregular";
+}
+
+.title > span.lg {padding: 7px 46px}
+.title > span.medium {padding: 7px 31px}
+.text-style span {color: #525252; display: inline-block;}
+.text-style {background: #f0f0f0 none repeat scroll 0 0;}
+textarea.textarea {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-left: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    font-size: 12px;
+    color: #a2a2a2;
+    font-family: 'montserratlight';
+    height: 150px;
+    border: 1px solid #DEDEDE;
+    resize: none
+}
+textarea.textarea.small{height: 120px}
+.uploader, .photo-uploader {
+    position: relative;
+    height: 36px;
+    border: 1px solid #dedede;
+    width: 310px
+}
+.photo-uploader {width: 79.1%;}
+#fileupload > input, .fileupload #fileupload {
+  -moz-appearance: none;
+  border: 0 none;
+  color: #ffffff;
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.filename {
+  color: #a2a2a2;
+  cursor: default;
+  display: block;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  line-height: 34px;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 65%;
+}
+.action {
+  color: #5e5e5e;
+  font-size: 12px;
+  height: 100%;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+  line-height: 34px;
+  padding-right: 14px;
+  font-family: 'montserratlight';
+}
+.action i{font-size: 12px; margin-right: 7px}
+.photo-uploader .action {
+  color: #ffffff;
+  font-family: "montserratregular";
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 102px;
+}
+.max-size {
+  color: #a2a2a2;
+  font-family: "montserratlight";
+  font-size: 12px;
+  line-height: 36px;
+}
+/*----------------------------------------*/
+/*  10. Candidates Page
+/*----------------------------------------*/
+
+.canditates-area .button-box {
+  align-items: center;
+  width: auto;
+}
+.canditates-area .img-icon{
+  
+}
+.canditates-area .address{
+  width: 50%;
+}
+.canditates-area .img-icon img {
+  width: 100%;
+}
+.canditates-area .button-box a {
+  background: #ececec none repeat scroll 0 0;
+  color: #696969;
+  width: 135px;
+  text-align: center;
+}
+.canditates-area .button-box a:hover{
+  color: #fff;
+}
+.canditates-area .address p span{
+  color: #26ae61;
+}
+
+/*----------------------------------------*/
+/*  11. Blog Page
+/*----------------------------------------*/
+
+.blog-posts .single-blog {
+  margin-bottom: 50px;
+}
+.sidebar-widget-title h4{
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  color: #333;
+  font-family: "montserratregular";
+  font-size: 24px;
+  line-height: 21px;
+}
+.sidebar-widget-title h4 span {
+  border-bottom: 2px solid #26ae61;
+  padding-bottom: 9px;
+}
+.search-container input {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #efefef;
+  color: #333;
+  font-size: 12px;
+  font-weight: 300;
+  height: 40px;
+  padding: 0 88px 0 17px;
+}
+.search-container > form {
+  position: relative;
+}
+.search-container button {
+  background: #26ae61 none repeat scroll 0 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  text-transform: capitalize;
+  top: 0;
+}
+.sidebar-widget-lists > li a {color: #616161;}
+.sidebar-widget-lists > li a:hover {padding-left: 5px}
+.recent-post-item h5 {font-family: "montserratregular";}
+.recent-post-item span {color: #616161;}
+.recent-post-item h5 a:hover{
+  color: #26ae61;
+}
+.blog-post-info > span.l-text {font-size: 14px;}
+.blog-text > h5.l-text {font-size: 24px;}
+.tags-and-links {border-bottom: 1px solid #ebebeb; border-top: 1px solid #ebebeb;}
+.tags-and-links span {
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+}
+.tags > li {display: inline-block;}
+.tags > li a {
+  color: #444;
+  padding: 0px 2px;
+  line-height: 21px;
+}
+.tags > li a:hover {color: #26ae61;}
+.tags {display: inline-block;}
+.social-links {display: inline-block;}
+.tags-and-links .social-links a {
+  color: #333;
+  height: auto;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+.tags-and-links .social-links a i {font-size: 14px; line-height: 17px;}
+.tags-and-links .social-links a:hover {background: transparent; color: #26ae61; }
+.comments {color: #4c4c4c;}
+h4.title {
+  color: #4c4c4c;
+  font-family: "montserratregular";
+  font-size: 24px;
+  position: relative;
+}
+h4.title:after {
+    bottom: 2px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 73px;
+}
+.author-image {
+    border: 2px solid #eaeaea;
+    border-radius: 2px;
+    float: left;
+    height: 67px;
+    margin-right: 23px;
+    width: 67px;
+}
+.author-image > img {width: 100%;}
+.comment-text {border-bottom: 1px solid #f0f0f0;}
+.author-info > h4 {
+    display: inline-block;
+    font-family: "montserratregular";
+    font-size: 18px;
+    line-height: 21px;
+}
+.author-info > h4 a {color: #4c4c4c;}
+span.reply a:hover {color: #2D3E50;}
+.comment-time, span.reply {
+    float: right;
+    font-family: "montserratregular";
+    line-height: 22px;
+}
+span.comment-time {padding-right: 3px; position: relative;}
+.comment-text > p {
+  color: #4c4c4c;
+  font-weight: 300;
+  line-height: 20px;
+}
+.single-comment.comment-reply {padding-left: 131px;}
+.comments .single-comment:last-child {margin-bottom: 0;}
+.reply > a {
+  color: #26ae61;
+}
+/*----------------------------------------*/
+/*  12. Register/Login  Page
+/*----------------------------------------*/
+.single-info label.lg-text {font-family: "montserratregular"; font-size: 16px;}
+p.panel-title {
+  color: #414141;
+  font-size: 14px;
+  font-weight: 500;
+}
+.conditions {
+    color: #959595;
+    font-family: "montserratlight";
+    font-size: 14px;
+}
+.conditions input[type="radio"], input[type="checkbox"] {
+  border: 1px solid #e3e3e3;
+  height: 17px;
+  margin: 0 10px 0 0;
+  padding: 0;
+  position: relative;
+  top: -1px;
+  width: 20px;
+}
+.conditions input[type="radio"]:focus, input[type="checkbox"]:focus {outline: 0 none;}
+.modal .modal-header {
+    border: 0 none;
+    min-height: auto;
+    padding: 0;
+}
+.modal {
+  background: rgba(0, 0, 0, 0) url("images/bg/login.jpg") no-repeat scroll center center / cover ;
+  z-index: 99999;
+}
+.modal-dialog {
+  bottom: 0;
+  color: #ffffff;
+  height: 432px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 465px;
+}
+.modal-dialog.register{height: 555px}
+.modal-body {padding: 0}
+.form-pop-up-content {background: #ffffff none repeat scroll 0 0;}
+.form-pop-up-content .area-title h2 {
+  border-color: #cccccc;
+  display: inline-block;
+  font-size: 18px;
+}
+.form-pop-up-content .area-title h2 {
+    border-color: #cccccc;
+    display: inline-block;
+    font-size: 18px;
+}
+.form-box > input {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    color: #959595;
+    font-family: "montserratlight";
+    height: 43px;
+    padding: 0 16px;
+}
+.modal-dialog button.close {
+  background: green none repeat scroll 0 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  height: 28px;
+  line-height: 0;
+  margin: 0;
+  opacity: 1;
+  padding: 1px;
+  position: absolute;
+  right: -31px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 30px;
+}
+.modal-content {
+  border: medium none;
+}
+.modal-dialog button.close span i{
+    font-size: 25px;
+}
+.modal-dialog button.close:after {display: none}
+.form-pop-up-content span a {
+  color: #959595;
+  font-family: "montserratlight";
+  font-size: 12px;
+}
+.remember {
+    color: #959595;
+    font-family: "montserratlight";
+    font-size: 12px;
+}
+.remember input[type="checkbox"] {
+  height: 14px;
+  margin-right: 6px;
+  position: relative;
+  top: -1px;
+  width: 15px;
+}
+.form-pop-up-content button {
+  background: #26ae61 none repeat scroll 0 0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 43px;
+  width: 136px;
+}
+.signup-form #form-pop-up {height: 598px; top: 47.2%;}
+.box2 {
+  display: flex;
+  width: 100%;
+}
+.box2 input:first-child {
+  margin-right: 7px;
+  width: 48%;
+}
+.box2 input:last-child {
+  margin-left: 7px;
+  width: 48%;
+}
+/*----------------------------------------*/
+/*  13. Contact Page
+/*----------------------------------------*/
+
+.contact-info-wrapper{
+  height: 100%;
+}
+
+
+.single-contact-info {
+  display: flex;
+  margin: auto auto 30px;
+  max-width: 220px;
+}
+.contact-form h4 {
+  font-family: montserratregular;
+  font-size: 24px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+.single-contact-icon {
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-table;
+    font-size: 22px;
+    margin: auto;
+}
+.single-contact-icon i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 100%;
+  border: 1px solid #26ae61;
+  color: #26ae61;
+}
+.single-contact-info:hover .single-contact-icon i{
+    background: #26ae61;
+    color:#fff;
+}
+.single-contact-text {
+  color: #4c4c4c;
+  font-family: montserratlight;
+  line-height: 24px;
+  width: calc(100% - 50px);
+}
+.single-contact-text {
+  color: #4c4c4c;
+  font-family: montserratlight;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 10px;
+  width: calc(100% -50px);
+}
+.contact-form label {
+    color: #9a9a9a;
+    font-family: "montserratlight";
+    font-weight: 300;
+}
+.contact-form input, .contact-form textarea {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border: 1px solid #c1c1c1;
+  font-size: 12px;
+  height: 40px;
+  padding: 10px 20px;
+}
+.contact-form textarea {height: 150px; padding-left: 20px}
+.submit-btn {
+  color: #fff;
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0 42px;
+  background: #26ae61;
+}
+.contact-form{
+  padding: 60px 130px;
+}
+
+.followus {
+  text-align: center;
+  margin-top: 50px;
+}
+.followus h4 {
+  margin-bottom: 10px;
+}
+.followus .social-links > a {
+  border: none;
+  color: #4d4d4d;
+  transition: all 0.3s ease-in-out;
+}
+.followus .social-links > a:hover{
+    background: transparent;
+    color: #26ae61;
+}
+.followus .social-links a i {
+  font-size: 20px;
+}
+.contact-left {
+  padding: 96px 0;
+}
+/*----------------------------------------*/
+/*  14. Other Page CSS
+/*----------------------------------------*/
+.banner-content h1.border-none:after {display: none;}
+
+.header-logo-menu.stick.semi-transparent {
+  background: rgba(46, 63, 81, 0.85) none repeat scroll 0 0;
+}
+.mb_YTPBar span.mb_OnlyYT {left: auto; right: 68px;}
+.mb_YTPUrl.ytpicon {display: none !important;}
+
+.box-layout {
+  box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
+  margin: auto;
+  max-width: 1340px;
+}
+.box-wrapper {
+  background: rgba(0, 0, 0, 0) url("images/bg/pattern.png") repeat fixed 0 0;
+}
+.box-layout {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
+  margin: auto;
+  max-width: 1340px;
+}
+
+.box-layout .sticky {
+  max-width: 1340px;
+}
